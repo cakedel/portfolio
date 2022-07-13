@@ -1,7 +1,7 @@
 .Wrap { } 
 
 .header { box-shadow: 0 0 3px #666; } 
-.header.on { position: fixed; inset: 0 auto auto 0; background: #fff; width: 100vw; z-index: 999; box-shadow: 0 0 3px #666; margin-top:-100px; transition: top 1s; } 
+.header.on { position: fixed; inset: 0 auto auto 0; background: #fff; width: 100vw; z-index: 999; box-shadow: 0 0 3px #666; margin-top:-100px; } 
 .inner { width: 1200px; margin: 0 auto; } 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 .header .inner { text-align: center; vertical-align: middle; } 
@@ -15,8 +15,8 @@
 .header .right i { font-size: 30px; vertical-align: middle; } 
 .mainVisual { height: 100vh; overflow: hidden; } 
 
-.brandStory { position: relative; padding: 150px 0 100px 0; overflow: hidden; } 
-.brandStory::before { position: absolute; inset: 400px auto auto 0; content: ""; display: block; height: 900px; width: 1550px; background: #194455; z-index: -999; } 
+.brandStory { position: relative; padding: 100px 0 200px 0; overflow: hidden; } 
+.brandStory::before { position: absolute; inset: 400px auto auto 0; content: ""; display: block; height: 1000px; width:81.58%;; background: #194455; z-index: -999; } 
 .brandStory .journeyVisual { position: absolute; inset: 100px 0 auto auto; vertical-align: right; z-index: -1; } 
 
 .brandStory .containment { padding: 10px 0 150px 0; border-left: 3px solid #d9e1e3; } 
@@ -24,13 +24,13 @@
 .brandStory .journey h2 { font-size: 60px; margin: 0 0 30px 0; padding: 0 0 0 40px; } 
 .brandStory .journey p { font-weight: 300; padding: 0 0 0 40px; } 
 
-.brandStory .left { position: relative; } 
+.brandStory .left { position: relative; width: 600px; height: 700px;; opacity: 0.1; backdrop-filter: blur(10px); } 
 .brandStory .left::before { position: absolute; inset: 0 auto auto 0; content: ""; display: block; width: 600px; height: 700px; opacity: 0.8; backdrop-filter: blur(70px); z-index: -10; } 
-.brandStory .left::after { position: absolute; inset: 0 auto auto 0; content: ""; display: block; width: 600px; height: 700px; background: #d9e1e3; opacity: 0.3; z-index: -10; } 
+.brandStory .left::after { position: absolute; inset: 0 auto auto 0; content: ""; display: block; width: 600px; height: 700px; background: #d9e1e3; opacity: 0.5; z-index: -10; } 
 
 
-.brandStory .container { padding: 400px 0; text-align: left; } 
-.brandStory .left img { width: 500px; z-index: 999; } 
+.brandStory .container { padding: 400px 0 0 0; text-align: left; } 
+.brandStory .left img { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); width: 500px; z-index: 999; } 
 
 .brandStory .right h2 { padding: 30px 0 0 40px; margin: 0 0 30px 0; font-size: 60px; color: #fff; } 
 .brandStory .right p { padding: 0 0 0 40px; font-weight: 100; color: #fff; } 
