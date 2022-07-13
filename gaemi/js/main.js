@@ -29,5 +29,9 @@ $(function () {
         $('.tabContent li').removeClass('on');
         $('.tabContent li').eq(idx).addClass('on');
     })
+    $('.mainSlider').on('afterChange', function(){
+        $('.menuP').addClass('on');
+        $('.menuP').siblings().removeClass('on')
+    })
 
 })
