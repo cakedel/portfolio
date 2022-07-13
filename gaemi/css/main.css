@@ -10,7 +10,7 @@
 .header .container { justify-content: space-between; } 
 
 .container .searchForm { display: flex; align-items: center; } 
-.container .searchForm>i { padding: 5px; font-size: 24px; color: #e50012; } 
+.container .searchForm>i { padding: 5px; font-size: 24px; color: #333 } 
 .header .container .searchForm { display: flex; align-items: center; width: 300px; } 
 
 .header .searchForm input[type='text'] { outline: none; border: none; border-bottom: 1px solid #ddd; background: transparent; color: #333; } 
@@ -23,15 +23,15 @@
 .mainVisual { position: relative; height: 500px; } 
 .mainVisual figure { background: url(../img/svisual01.jpg) no-repeat right center/cover; height: 500px; filter: brightness(0.8) saturate(1.2); } 
 .mainVisual .inner { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%,-50%); height: 500px; } 
-.mainVisual h2 { position: absolute; inset: 50% auto auto 0; transform: translateY(-50%); letter-spacing: 30px; color: #fff; font-size: 60px; font-weight: 300; line-height: 1.25; z-index: 999; } 
+.mainVisual h2 { position: absolute; inset: 50% auto auto 0; transform: translateY(-50%); color: #fff; font-size: 60px; font-weight: 300; line-height: 1.25; z-index: 999; } 
 .mainVisual h2 strong { font-weight: 700; } 
 
 .brandStory { display: flex; padding: 100px 0; } 
 .brandStory .special { display: flex; flex-direction: column; justify-content: center; padding: 0 0 0 134px; } 
 .brandStory h2 { letter-spacing: 10px; font-size: 48px; font-weight: 500; } 
 .brandStory h2::after { content:""; display: block; width:140px; height: 3px; background: #c00000; margin: 20px 0 40px 0; } 
-.brandStory h3 { font-size: 16px; font-weight: 300; margin: 0 0 10px 0; } 
-.brandStory p { font-size: 16px; font-weight: 300; } 
+.brandStory p { font-size: 16px; font-weight: 300; line-height: 1.2; } 
+.brandStory .top { margin: 0 0 10px 0; } 
 
 .menu { padding: 0 0 100px 0; } 
 .menu .menuTitle { position: relative; width: 100%; padding: 70px 0 0 0; } 
@@ -64,13 +64,11 @@
 .store h2 { position: absolute; inset: auto auto -3px 50%; transform: translateX(-50%); font-size: 72px; font-weight: 900; color: #e6e6e6; } 
 .store .line { width: 100%; height: 3px; background: #e6e6e6; } 
 
-.store { padding: 100px 0; background: #f1f1f1; } 
+.store { padding: 100px 0; } 
 
-.store .container { gap: 30px; padding: 50px 0 0 0; }  
+.store .container { gap: 30px; padding: 50px 0 0 0; } 
 
-.store .left {}
-
-.store .container>ul { flex: 1}
+.store .container>ul { flex: 1 } 
 
 .store .tabContent>ul>li { display: none; } 
 
@@ -92,7 +90,7 @@
 
 .tabContent .adress strong { width: 450px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
 
-.right .map { padding: 200px 0; background: #ddd;}
+.store .right { padding: 200px 0; background: #ddd; } 
 
 .franchise { position: relative; padding: 100px 0; background: url(../img/st-s02-bg.jpg) no-repeat center center/cover; color: #fff; overflow: hidden; } 
 
