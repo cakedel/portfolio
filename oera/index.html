@@ -8,6 +8,7 @@
     <title>Oera</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -39,7 +40,8 @@
         <!-- { brandStory start -->
         <section class="brandStory">
             <div class="inner">
-                <div class="containment">
+                <div class="containment" data-aos="fade-down" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000">
                     <div class="journey">
                         <h2>The Journey to<br>
                             Eternal beauty</h2>
@@ -48,23 +50,24 @@
                     </div>
                 </div>
             </div>
-            <figure></figure>
-            <img class="journeyVisual" src="./img/young-5341577_1920.jpg" alt="">
+            <img class="journeyVisual" src="./img/young-5341577_1920.jpg" data-aos="fade-up-left"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
             <div class="container">
                 <div class="left">
                     <img src="./img/index-sec-2.png" alt="">
                 </div>
-                <div class="right">
-                    <h2>
-                        Calibrate Your<br>
-                        Every Single<br>
-                        Moment
-                    </h2>
-                    <p>캘리브레이팅이 중심이 된 매일의 리추얼은<br>
-                        변화하는 시대에 끊임 없이 적응하며,<br>
-                        완벽에 가까워지기 위한 여정입니다.</p>
+                <div class="right" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+                    <div class="journey">
+                        <h2>
+                            Calibrate Your<br>
+                            Every Single<br>
+                            Moment
+                        </h2>
+                        <p>캘리브레이팅이 중심이 된 매일의 리추얼은<br>
+                            변화하는 시대에 끊임 없이 적응하며,<br>
+                            완벽에 가까워지기 위한 여정입니다.</p>
+                    </div>
                 </div>
-            </div>
         </section>
         <!-- brandStory end } -->
         <!-- { brandTitle start -->
@@ -75,24 +78,77 @@
                         가장 이상적인 아름다움을<br>
                         담은 브랜드</h2>
                     <p class="top">오에라는 겉보기엔 절제되고 단단하지만<br>
-                        풍부한 내면의 깊이를 가진 브랜드입니다.
+                        풍부한 내면의 깊이를 가진 브랜드입니다
                     </p>
                     <p class="bottom">
                         고정관념을 벗어나 기존에 없던 새로운 관점으로<br>
-                        세상을 바라보는 오에라의 인스퍼레이션을 만나보세요.</p>
+                        세상을 바라보는 오에라의 인스퍼레이션을 만나보세요</p>
+                    <div class="productView" data-aos="fade-down" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1500"><i class="xi-angle-down-min"></i><strong>PRODUCT 제품 보러가기</strong></div>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                     <img src="./img/index-sec-4-3.jpg" alt="">
                 </div>
             </div>
         </section>
         <section class="product">
-            <div class="pSlider">
-                <figure></figure>
+            <div class="slider">
+                <div class="pSlider">
+                    <figure>
+                        <a href=""><img src="./img/thumbnail-balancing-cream-in-water_m.jpg" alt="">
+                            <div class="pExlplain">
+                        </a>
+                        <h2>BALANCING CREAM-IN-WATER</h2>
+                        <p>밸런싱 크림-인-워터</p>
+                </div>
+                </figure>
+                <figure><a href=""><img src="./img/thumbnail-hydro-quenching-serum_m.jpg" alt="">
+                        <div class="pExlplain">
+                    </a>
+                    <h2>BALANCING CREAM-IN-WATER</h2>
+                    <p>밸런싱 크림-인-워터</p>
             </div>
-        </section>
+            </figure>
+            <figure><a href=""><img src="./img/thumbnail-intensive-firming-cream_m.jpg" alt="">
+                    <div class="pExlplain">
+                </a>
+                <h2>INTENSIVE FIRMING CREAM</h2>
+                <p>인텐시브 퍼밍 크림</p>
+    </div>
+    </figure>
+    <figure><a href=""><img src="./img/thumbnail-multi-benefit-calibrator_m.jpg" alt="">
+            <div class="pExlplain">
+        </a>
+        <h2>MULTI-BENEFIT CALIBRATOR</h2>
+        <p>멀티-베네핏 캘리브레이터</p>
+        </div>
+    </figure>
+    <figure><a href=""><img src="./img/thumbnail-purifying-cleansing-foam_m.jpg" alt="">
+            <div class="pExlplain">
+        </a>
+        <h2>BALANCING CREAM-IN-WATER</h2>
+        <p>밸런싱 크림-인-워터</p>
+        </div>
+    </figure>
+    <figure><a href=""><img src="./img/thumbnail-rapid-response-cream-mask_m.jpg" alt="">
+            <div class="pExlplain">
+        </a>
+        <h2>BALANCING CREAM-IN-WATER</h2>
+        <p>밸런싱 크림-인-워터</p>
+        </div>
+    </figure>
+    </div>
+    </div>
+    </section>
 
     </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
 
 </body>
 

@@ -4,6 +4,7 @@ $(function () {
         autoplay: true,
         centerMode: true,
         centerPadding: '700px',
+        
     })
     $('.slideArrows i:nth-child(1)').on('click', function () {
         $('.mainSlider').slick('slickPrev');

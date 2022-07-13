@@ -1,5 +1,7 @@
 .Wrap { } 
 
+.header { box-shadow: 0 0 3px #666; }
+.header.on { position: fixed; inset: 0 auto auto 0; background: #fff; width: 100vw; z-index: 999; box-shadow: 0 0 3px #666; margin-top:-100px;}
 .inner { width: 1200px; margin: 0 auto; } 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 .header .inner { text-align: center; vertical-align: middle; } 
@@ -13,17 +15,17 @@
 .header .right i { font-size: 30px; vertical-align: middle; } 
 .mainVisual { height: 100vh; overflow: hidden; } 
 
-.brandStory { position: relative; padding: 100px 0; } 
-.brandStory::before { position: absolute; inset: 400px auto auto 0; content: ""; display: block; height: 900px; width: 81.58%; background: #2a5c62; z-index: -999; } 
-.brandStory .journeyVisual { position: absolute; inset: 100px 0 auto auto; vertical-align: right; z-index: -990; } 
+.brandStory { position: relative; padding: 150px 0 100px 0; overflow: hidden;} 
+.brandStory::before { position: absolute; inset: 400px auto auto 0; content: ""; display: block; height: 900px; width: 81.58%; background: #194455; z-index: -999; } 
+.brandStory .journeyVisual { position: absolute; inset: 100px 0 auto auto; vertical-align: right; margin-left: -300px; margin-bottom: -300px; opacity: 0; z-index: -1; } 
 
-.brandStory .containment { padding: 10px 0 200px 0; border-left: 3px solid #ccd9dc; } 
+.brandStory .containment { padding: 10px 0 150px 0; border-left: 3px solid #d9e1e3; } 
 .brandStory .inner { position: relative; } 
 .brandStory .journey h2 { font-size: 60px; margin: 0 0 30px 0; padding: 0 0 0 40px; } 
 .brandStory .journey p { font-weight: 300; padding: 0 0 0 40px; } 
 
-.brandStory .left { position: relative; } 
-.brandStory .left::before { content: ""; display: block; width: 600px; height: 700px; background: #d9e1e3; opacity: 0.7; } 
+.brandStory .left { position: relative; margin-top: -300px; opacity: 0; }
+.brandStory .left::before { content: ""; display: block; width: 600px; height: 700px; background: #d9e1e3; opacity: 0.5; backdrop-filter: blur(50px); } 
 
 .brandStory .container { padding: 400px 0 100px 0; text-align: left; } 
 .brandStory .left img { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); width: 500px; } 
@@ -31,12 +33,31 @@
 .brandStory .right h2 { padding: 30px 0 0 40px; margin: 0 0 30px 0; font-size: 60px; color: #fff; } 
 .brandStory .right p { padding: 0 0 0 40px; font-weight: 100; color: #fff; } 
 
-.brandTitle { padding: 0 0 100px 0;}
+.brandTitle { padding: 0 0 100px 0; } 
 .brandTitle .container { gap: 100px; justify-content: flex-end } 
-.brandTitle .left { text-align: right; padding: 40px 0 0 0;}
-.brandTitle .left h2 { font-family:'Noto Sans KR'; font-size: 36px; padding: 0 40px 50px 0; border-right:3px solid #2a5c62; line-height: 1.25; margin: 0 0 30px 0; } 
+.brandTitle .left { text-align: right; padding: 40px 0 0 0; } 
+.brandTitle .left h2 { font-family:'Noto Sans KR'; font-size: 36px; padding: 0 40px 50px 0; border-right:3px solid #2a5c62; line-height: 1.25; margin: 0 0 40px 0; } 
 
-.brandTitle .left .top { margin: 0 0 20px 0;}
+.brandTitle .left .top { margin: 0 0 20px 0; } 
+.brandTitle .left p { padding: 0 40px 0 0; font-weight: 300; } 
+.brandTitle .left .bottom { margin: 0 0 150px 0; } 
+.brandTitle .left i { padding: 3px; font-size: 27px; vertical-align: middle; animation: bottom 0.8s linear infinite; color: #e6e6e6; } 
+.brandTitle .left strong { padding: 0 40px 0 0; font-size: 17px; color: rgb(197, 197, 197); text-decoration: underline; text-underline-position:under; } 
+
+@keyframes bottom { 
+ 0% { transform: translateY(-5px); } 
+ 100% { transform: translateY(3px); } 
+ }
 
 .brandTitle .right { width: 600px; } 
 
+.product { padding: 0 0 100px 0; } 
+.product .slider { width: 81.58%; } 
+
+.product .slider img { margin : 0 0 30px 0; } 
+
+.product .slider .pExlplain { border-left: 3px solid #2a5c62; } 
+.product .slider h2 { padding: 0 0 0 25px; margin: 0 0 10px 0; font-family:'Noto Sans KR'; font-size: 18px; font-weight: 500; } 
+.product .slider p { padding: 0 0 0 25px; font-weight: 300; } 
+
+.product .pSlider figure { padding: 0 0 0 30px; } 
