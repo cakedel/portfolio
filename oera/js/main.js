@@ -4,7 +4,7 @@ $(function () {
         var sct = $(document).scrollTop()
 
         if (sct > $('.brandStory').offset().top) {
-            $('header').addClass('on').animate({ 'margin-top': '0' }, 1000)
+            $('header').addClass('on').animate({ 'margin-top': '0' }, 1500)
         }
         else {
             $('header').removeClass('on')
