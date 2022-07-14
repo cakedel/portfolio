@@ -30,8 +30,14 @@
 .brandStory .special { display: flex; flex-direction: column; justify-content: center; padding: 0 0 0 134px; } 
 .brandStory h2 { letter-spacing: 10px; font-size: 48px; font-weight: 500; } 
 .brandStory h2::after { content:""; display: block; width:140px; height: 3px; background: #c00000; margin: 20px 0 40px 0; } 
+<<<<<<< HEAD
+
+.brandStory p { font-weight: 300; } 
+.brandStory .top { margin: 0 0 10px 0;}
+=======
 .brandStory p { font-size: 16px; font-weight: 300; line-height: 1.2; } 
 .brandStory .top { margin: 0 0 10px 0; } 
+>>>>>>> 26f249d1cd63a8e151e6647bb58f3d27c5d2a7d0
 
 .menu { padding: 0 0 100px 0; } 
 .menu .menuTitle { position: relative; width: 100%; padding: 70px 0 0 0; } 
@@ -43,7 +49,7 @@
 .mainSlider figure.slick-current img { transform: scale(1.2); transition: 0.5s; } 
 
 .mainSlider figure .menuP { display: none; padding: 0 0 0 50px; } 
-.mainSlider figure.slick-current .menuP { display: block; } 
+.mainSlider figure .menuP.on { display: block; } 
 
 .menuP h3 { font-size: 30px; font-weight: 700; } 
 
