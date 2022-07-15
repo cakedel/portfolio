@@ -1,9 +1,9 @@
-/* * { border: 1px solid #f00; }  */
+/* * { border: 1px solid #f00; } */
 
 .Wrap { } 
 
 .header { box-shadow: 0 0 3px rgb(194, 194, 194); background: rgb(255, 255, 255,0.8); width: 100%; } 
-.header.on { position: fixed; inset: 0 auto auto 50%;  transform: translateX(-50%); z-index: 999; margin-top: -100px; backdrop-filter: blur(10px); } 
+.header.on { position: fixed; inset: 0 auto auto 50%; transform: translateX(-50%); z-index: 999; margin-top: -100px; backdrop-filter: blur(10px); } 
 .inner { width: 1200px; margin: 0 auto; } 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 .header .inner { vertical-align: middle; } 
@@ -25,7 +25,7 @@
  /* img가 inline-block 속성이라 로고가 위쪽으로 2px뜨는 것을 막아줌! */
 .header .right { justify-content: flex-end; gap: 50px; } 
 .header .right i { font-size: 30px; vertical-align: middle; } 
-.mainVisual { height: 100vh; overflow: hidden; } 
+.mainVisual { height: calc(100vh - 100px); overflow: hidden; } 
 
 .brandStory { position: relative; padding: 150px 0 150px 0; overflow: hidden; } 
 .brandStory::before { position: absolute; inset: 400px auto auto 0; content: ""; display: block; height: 900px; width:81.58%;; background: #194455; z-index: -999; } 
@@ -56,12 +56,8 @@
 .brandTitle .left p { padding: 0 40px 0 0; font-weight: 300; } 
 .brandTitle .left .bottom { margin: 0 0 150px 0; } 
 .brandTitle .left i { padding: 3px; font-size: 27px; vertical-align: middle; animation: bottom 0.8s linear infinite; color: #ddd; } 
-.brandTitle .left strong { padding: 0 40px 0 0; font-size: 17px; color: #999; text-decoration: underline; text-underline-position:under; } 
+.brandTitle .left strong { padding: 0 40px 0 0; font-size: 17px; font-weight: 400; color: #c5c5c5; text-decoration: underline; text-underline-position:under; } 
 
-@keyframes bottom { 
- 0% { transform: translateY(-5px); } 
- 100% { transform: translateY(3px); } 
- }
 
 .brandTitle .right { width: 600px; } 
 
@@ -76,9 +72,9 @@
 
 .product .pSlider figure { padding: 0 0 0 30px; } 
 
-.waterBall .inner { position: relative; overflow: hidden; filter: } 
-.waterBall h2 { position: absolute; inset: 0 auto auto 0; font-size: 60px; backdrop-filter: blur(10px); }
-
+.waterBall .inner { position: relative; overflow: hidden; height: 850px; } 
+.waterBall h2 { position: absolute; inset: 0 auto auto 0; font-size: 60px; backdrop-filter: blur(10px); } 
+.waterBall .mainVideo { position: absolute; inset: 0 -280px auto auto; } 
 
 .footer { border-top: 1px solid #e6e6e6; } 
 .footer .inner { padding: 50px 0; font-size: 14px; font-weight: 300; color: #666; } 
