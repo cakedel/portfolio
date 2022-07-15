@@ -1,19 +1,16 @@
 $(function () {
-    $(window).scroll(function () {
+    $(window).scroll(function (e) {
 
         var sct = $(document).scrollTop()
-        if (sct < 1) {
-            $('header').css("inset", "-100 auto auto 0")
-        }
 
         if (sct > $('.brandStory').offset().top) {
-            $('header').addClass('on')
+            $('header').addClass('on').animate({ 'margin-top': '0' }, 1500, null, e)
         }
         else {
             $('header').removeClass('on')
         }
     })
-    $('.gnb>ul').hover(function (e) {
+    $('.gnb .left').hover(function (e) {
         e.preventDefault()
         $('.bMenu').stop().slideUp()
         $('.bMenu').stop().slideToggle()

@@ -1,12 +1,12 @@
-
-/* * { border: 1px solid #f00; } */
+/* 
+* { border: 1px solid #f00; } */
 .Wrap { } 
 
-.header { position: sticky; box-shadow: 0 0 3px rgb(194, 194, 194); } 
-.header.on { position: fixed; inset: 0 auto auto 0; background: #fff; width: 100vw; z-index: 999; transition: 1.5s; } 
+.header { box-shadow: 0 0 3px rgb(194, 194, 194); } 
+.header.on { position: fixed; inset: 0 auto auto 0; background: rgb(255, 255, 255,0.8); width: 100vw; z-index: 999; margin-top: -100px; backdrop-filter: blur(10px);} 
 .inner { width: 1200px; margin: 0 auto; } 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
-.header .inner { text-align: center; vertical-align: middle; } 
+.header .inner { vertical-align: middle; } 
 .header { line-height: 100px; } 
 .gnb>ul { display: flex; font-weight: 300; text-transform: uppercase; } 
 
@@ -15,7 +15,7 @@
 
 .header .gnb .left { gap:50px; text-align: start; } 
 
-.bMenu { display: none; line-height: 1; } 
+.bMenu { display: none; line-height: 1; padding: 0 0 50px 0;} 
 .bMenu>li { padding: 5px 0; font-size: 12px; color: #999; } 
 .gnb>ul>li:hover .line { text-decoration: underline; text-underline-position:under; } 
 
@@ -74,8 +74,9 @@
 
 .product .pSlider figure { padding: 0 0 0 30px; } 
 
-.waterBall .inner { position: relative; } 
-.waterBall h2 { position: absolute; inset: 0 auto auto 0; font-size: 60px; backdrop-filter: blur(10px); } 
+.waterBall .inner { position: relative; overflow: hidden; } 
+.waterBall h2 { position: absolute; inset: 0 auto auto 0; font-size: 60px; backdrop-filter: blur(10px); }
+.mainVideo {}
 
 
 .footer { border-top: 1px solid #e6e6e6; } 
