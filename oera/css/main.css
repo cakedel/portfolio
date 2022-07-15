@@ -73,7 +73,7 @@
 .product .pSlider figure { padding: 0 0 0 30px; } 
 
 .waterBall .inner { position: relative; overflow: hidden; height: 850px; } 
-.waterBall h2 { position: absolute; inset: 0 auto auto 0; font-size: 60px; backdrop-filter: blur(10px); } 
+.waterBall h2 { position: absolute; inset: 0 auto auto 0; padding: 40px 40px 40px 0; font-size: 60px; backdrop-filter: blur(10px); } 
 .waterBall .mainVideo { position: absolute; inset: 0 -280px auto auto; } 
 
 .footer { border-top: 1px solid #e6e6e6; } 
