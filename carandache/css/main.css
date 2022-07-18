@@ -1,0 +1,28 @@
+/* * {border: 1px solid #f00;} */
+.Wrap { } 
+
+.container { display: flex; width: 1200px; margin: 0 auto; }
+.inner { width: 1200px; margin: 0 auto;} 
+
+header {position: relative;}
+header .logo {background: #da291c;padding: 50px 0 80px 0; width: 100%; } 
+header .logo h2 { width: 200px; margin: 0 auto; } 
+
+header .gnb { position: absolute; inset: 180px auto auto 50%; transform: translate(-50%, -50%); justify-content: center; line-height: 80px; background: #fff; border-radius: 10px; box-shadow: 0 0 3px #999; z-index: 999; }
+
+header .gnb.on {position: fixed; inset: 0 auto auto 50%; transform: translateX(-50%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px;}
+
+header .gnb .left>li {position: relative; padding: 0 35px;}
+header .left { display: flex; text-align: center; } 
+header .right { display: flex; gap: 10px; padding: 0 0 0 70px;} 
+header .smenu { position: absolute; inset: auto auto -100% 50%; transform: translateX(-50%); display: none; line-height: 1.5; font-size: 12px; background: #fff; } 
+
+header .container>ul:hover .smenu {display: block;} 
+header .right i { font-size: 21px; vertical-align: middle;}
+
+.mainVisual .video {
+    height: calc(100vh - 180px);
+}
+
+.brandStory { padding: 100px 0;}
+.brandStory h2 {margin: 0 0 1000px 0;}
