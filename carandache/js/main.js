@@ -7,12 +7,17 @@ $(function () {
 
         var sct = $(document).scrollTop()
 
-        if (sct > $('.brandStory').offset().top) {
+        if (sct > $('.mainSlider').offset().top) {
             $('header .gnb').addClass('on')
         }
         else {
             $('header .gnb').removeClass('on')
         }
-        });
-
+    });
+    $('.slider').slick({
+        arrows: false,
+        autoplay: true,
+        centerMode: true,
+        centerPadding: '700px',
+    });
 })
